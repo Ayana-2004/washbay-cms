@@ -64,8 +64,8 @@ export default buildConfig({
   db: mongooseAdapter({
     url: process.env.DATABASE_URI || '',
   }),
-  collections: [Pages, Posts, Media, Categories, Users, Services, Testimonials, Bookings,Gallery],
-  cors: [getServerSideURL(), 'http://localhost:3001', 'http://localhost:3000'].filter(Boolean),
+  collections: [Pages, Posts, Media, Categories, Users, Services, Testimonials, Bookings, Gallery],
+  cors: [getServerSideURL(), 'http://localhost:3000', 'http://localhost:3000'].filter(Boolean),
   globals: [Header, Footer],
   plugins,
   secret: process.env.PAYLOAD_SECRET,
