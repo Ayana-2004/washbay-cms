@@ -10,6 +10,7 @@ import PageClient from './page.client'
 import { notFound } from 'next/navigation'
 
 export const revalidate = 600
+export const dynamic = 'force-dynamic'
 
 type Args = {
   params: Promise<{
